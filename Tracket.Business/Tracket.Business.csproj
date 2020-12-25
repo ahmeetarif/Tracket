@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tracket.Contracts\Tracket.Contracts.csproj" />
+    <ProjectReference Include="..\Tracket.Core\Tracket.Core.csproj" />
+    <ProjectReference Include="..\Tracket.Data\Tracket.Data.csproj" />
+    <ProjectReference Include="..\Tracket.Infrastructure.Identity\Tracket.Infrastructure.Identity.csproj" />
+  </ItemGroup>
+
+</Project>
