@@ -1,0 +1,17 @@
+[
+  {
+    "Key": "ProvideRequiredInformation",
+    "LocalizedValue": {
+      "en-US": "Please provide required information!",
+      "tr-TR": "Lütfen gerekli bilgileri doldurunuz!"
+    }
+  },
+
+  {
+    "Key": "EmptyEmail",
+    "LocalizedValue": {
+      "en-US": "Please enter your Email Address!",
+      "tr-TR": "Lütfen E-Posta addressinizi giriniz!"
+    }
+  }
+]

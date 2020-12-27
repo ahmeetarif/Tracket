@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Tracket.Business.Extensions;
 using Tracket.Contracts.V1.Requests.Authentication;
 
 namespace Tracket.Business.Validators.Authentication
@@ -10,7 +8,7 @@ namespace Tracket.Business.Validators.Authentication
     {
         public RegisterRequestValidator()
         {
-
+            RuleFor(x => x.Email).Email();
         }
     }
 }

@@ -12,10 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tracket.Common\Tracket.Common.csproj" />
     <ProjectReference Include="..\Tracket.Contracts\Tracket.Contracts.csproj" />
     <ProjectReference Include="..\Tracket.Core\Tracket.Core.csproj" />
     <ProjectReference Include="..\Tracket.Data\Tracket.Data.csproj" />
     <ProjectReference Include="..\Tracket.Infrastructure.Identity\Tracket.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\Tracket.Infrastructure.Localization\Tracket.Infrastructure.Localization.csproj" />
   </ItemGroup>
 
 </Project>

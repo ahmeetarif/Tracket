@@ -1,7 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using FluentValidation.AspNetCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 using Tracket.Core.Business.Installer;
-using Tracket.Infrastructure.Identity;
 
 namespace Tracket.Business.Installers
 {
@@ -9,7 +10,11 @@ namespace Tracket.Business.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-
+            services.AddControllers()
+                .AddFluentValidation(config =>
+                {
+                    config.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+                });
         }
     }
 }

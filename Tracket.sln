@@ -9,21 +9,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{3D99D2FD-9F2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{08E48531-3D24-44B4-89A2-4EDF8BE26518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Api", "Tracket.Api\Tracket.Api.csproj", "{91900C7F-7554-4FD7-B08E-47EA605DDB5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Api", "Tracket.Api\Tracket.Api.csproj", "{91900C7F-7554-4FD7-B08E-47EA605DDB5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C7ED1908-5A1E-41A6-9EAB-CD69704194DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Data", "Tracket.Data\Tracket.Data.csproj", "{EB6A3C77-AD13-41BE-91E2-3387740B3B46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Data", "Tracket.Data\Tracket.Data.csproj", "{EB6A3C77-AD13-41BE-91E2-3387740B3B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Entities", "Tracket.Entities\Tracket.Entities.csproj", "{AD97FBD5-4D87-4892-BD7C-C3819A638D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Entities", "Tracket.Entities\Tracket.Entities.csproj", "{AD97FBD5-4D87-4892-BD7C-C3819A638D74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Business", "Tracket.Business\Tracket.Business.csproj", "{E1814EDD-58EE-4C05-BEE3-26B361EC9D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Business", "Tracket.Business\Tracket.Business.csproj", "{E1814EDD-58EE-4C05-BEE3-26B361EC9D78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Core", "Tracket.Core\Tracket.Core.csproj", "{04FCD13A-A86E-4A74-AF40-43C1378B52FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Core", "Tracket.Core\Tracket.Core.csproj", "{04FCD13A-A86E-4A74-AF40-43C1378B52FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Infrastructure.Identity", "Tracket.Infrastructure.Identity\Tracket.Infrastructure.Identity.csproj", "{CA0E832F-0655-4691-9457-5FC77A9A6C50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Infrastructure.Identity", "Tracket.Infrastructure.Identity\Tracket.Infrastructure.Identity.csproj", "{CA0E832F-0655-4691-9457-5FC77A9A6C50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Contracts", "Tracket.Contracts\Tracket.Contracts.csproj", "{2EB46B58-F012-4048-A648-561E644E6A3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Contracts", "Tracket.Contracts\Tracket.Contracts.csproj", "{2EB46B58-F012-4048-A648-561E644E6A3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Infrastructure.Localization", "Tracket.Infrastructure.Localization\Tracket.Infrastructure.Localization.csproj", "{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Common", "Tracket.Common\Tracket.Common.csproj", "{78C05D3E-C70D-4C44-B8E3-0AE317245471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,14 @@ Global
 		{2EB46B58-F012-4048-A648-561E644E6A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EB46B58-F012-4048-A648-561E644E6A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EB46B58-F012-4048-A648-561E644E6A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +86,8 @@ Global
 		{04FCD13A-A86E-4A74-AF40-43C1378B52FC} = {3D99D2FD-9F2B-4206-AF0E-0D5B128F29FA}
 		{CA0E832F-0655-4691-9457-5FC77A9A6C50} = {C7ED1908-5A1E-41A6-9EAB-CD69704194DC}
 		{2EB46B58-F012-4048-A648-561E644E6A3B} = {3D99D2FD-9F2B-4206-AF0E-0D5B128F29FA}
+		{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185} = {C7ED1908-5A1E-41A6-9EAB-CD69704194DC}
+		{78C05D3E-C70D-4C44-B8E3-0AE317245471} = {3D99D2FD-9F2B-4206-AF0E-0D5B128F29FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5AF7D5C-29BE-4455-9B0F-281F80430C95}

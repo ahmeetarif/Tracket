@@ -31,6 +31,8 @@ namespace Tracket.Api
                 app.ConfigureSwagger();
             }
 
+            app.ConfigureLocalizationCultures();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
