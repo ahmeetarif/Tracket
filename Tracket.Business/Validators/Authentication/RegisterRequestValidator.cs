@@ -9,6 +9,8 @@ namespace Tracket.Business.Validators.Authentication
         public RegisterRequestValidator()
         {
             RuleFor(x => x.Email).Email();
+            RuleFor(x => x.Fullname).Fullname();
+            RuleFor(x => x.Password).Password();
         }
     }
 }

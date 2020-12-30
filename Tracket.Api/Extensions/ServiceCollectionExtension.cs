@@ -11,7 +11,6 @@ namespace Tracket.Api.Extensions
     {
         public static void ConfigureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddIdentityInfrastructure(configuration);
             services.AddBusiness(configuration);
             services.AddSwaggerGen(c =>
             {

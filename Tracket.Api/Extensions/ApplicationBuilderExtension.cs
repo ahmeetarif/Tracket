@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 
 namespace Tracket.Api.Extensions
 {
@@ -26,6 +30,25 @@ namespace Tracket.Api.Extensions
                 DefaultRequestCulture = new RequestCulture("en-US"),
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
+            });
+        }
+
+        public static void ConfigureHealthChecks(this IApplicationBuilder app)
+        {
+            app.UseHealthChecks("/health", new HealthCheckOptions
+            {
+                ResponseWriter = async (c, r) =>
+                {
+                    c.Response.ContentType = "application/json";
+
+                    var result = JsonConvert.SerializeObject(new
+                    {
+                        status = r.Status.ToString(),
+                        Components = r.Entries.Select(x => new { key = x.Key, value = x.Value.Status.ToString() })
+                    });
+
+                    await c.Response.WriteAsync(result);
+                }
             });
         }
     }

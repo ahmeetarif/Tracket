@@ -1,9 +1,9 @@
-[
+﻿[
   {
     "Key": "ProvideRequiredInformation",
     "LocalizedValue": {
       "en-US": "Please provide required information!",
-      "tr-TR": "L�tfen gerekli bilgileri doldurunuz!"
+      "tr-TR": "Lütfen gerekli bilgileri doldurunuz!"
     }
   },
 
@@ -11,7 +11,31 @@
     "Key": "EmptyEmail",
     "LocalizedValue": {
       "en-US": "Please enter your Email Address!",
-      "tr-TR": "L�tfen E-Posta addressinizi giriniz!"
+      "tr-TR": "Lütfen E-Posta addressinizi giriniz!"
+    }
+  },
+
+  {
+    "Key": "EmptyPassword",
+    "LocalizedValue": {
+      "en-US": "Please enter your Password!",
+      "tr-TR": "Lütfen Şifrenizi giriniz!!"
+    }
+  },
+
+  {
+    "Key": "EmptyFullName",
+    "LocalizedValue": {
+      "en-US": "Please enter your Fullname!",
+      "tr-TR": "Lütfen tam adınızı giriniz!"
+    }
+  },
+
+  {
+    "Key": "EmptyUsername",
+    "LocalizedValue": {
+      "en-US": "Please enter your Username!",
+      "tr-TR": "Lütfen Kullanıcı adınızı giriniz!"
     }
   }
 ]

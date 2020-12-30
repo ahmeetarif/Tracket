@@ -1,29 +1,32 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Tracket.Data;
-using Tracket.Entities.Entity;
 
 namespace Tracket.Infrastructure.Identity
 {
     public static class ServiceRegistration
     {
-        public static void AddIdentityInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        public static void AddIdentityInfrastructure<User, UserRole, DbContext>(this IServiceCollection services, IConfiguration configuration)
+            where User : IdentityUser
+            where UserRole : IdentityRole
+            where DbContext : IdentityDbContext<User>
         {
-            services.AddIdentity<TracketUser, IdentityRole>(options =>
+            services.AddIdentity<User, UserRole>(options =>
             {
                 options.Password.RequireDigit = true;
-                options.Password.RequireLowercase = true;
                 options.Password.RequiredLength = 6;
-                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireLowercase = true;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = true;
+                options.Password.RequiredUniqueChars = 0;
 
-                options.User.RequireUniqueEmail = true;
                 options.User.AllowedUserNameCharacters = "._";
+                options.User.RequireUniqueEmail = true;
             })
                 .AddDefaultTokenProviders()
-                .AddEntityFrameworkStores<TracketDbContext>();
+                .AddEntityFrameworkStores<DbContext>()
+                .AddUserManager<IdentityUserManager<User>>();
         }
     }
 }
