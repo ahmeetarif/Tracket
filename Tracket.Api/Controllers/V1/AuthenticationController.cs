@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Globalization;
 using System.Threading.Tasks;
 using Tracket.Business.Services.Abstract;
 using Tracket.Contracts.V1;
+using Tracket.Contracts.V1.Requests.Authentication;
 
 namespace Tracket.Api.Controllers.V1
 {
@@ -16,11 +16,10 @@ namespace Tracket.Api.Controllers.V1
         }
 
         [Route(ApiRoutes.Authentication.Register)]
-        [HttpGet]
-        public async Task<IActionResult> Register()
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterRequestModel registerModel)
         {
-            CultureInfo.CurrentCulture = new CultureInfo("tr-TR");
-            await _authenticationService.RegisterAsync(null);
+            await _authenticationService.RegisterAsync(registerModel);
             return Ok();
         }
     }

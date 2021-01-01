@@ -21,7 +21,6 @@ namespace Tracket.Infrastructure.Identity
                 options.Password.RequireUppercase = true;
                 options.Password.RequiredUniqueChars = 0;
 
-                options.User.AllowedUserNameCharacters = "._";
                 options.User.RequireUniqueEmail = true;
             })
                 .AddDefaultTokenProviders()

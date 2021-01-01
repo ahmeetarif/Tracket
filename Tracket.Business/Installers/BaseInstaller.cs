@@ -19,7 +19,7 @@ namespace Tracket.Business.Installers
         {
             services.AddControllers(options =>
             {
-                options.Filters.Add<ExceptionFilter>();
+                options.Filters.Add<ExceptionFilter2>();
             })
                 .AddFluentValidation(config =>
                 {

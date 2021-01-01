@@ -36,14 +36,26 @@ namespace Tracket.Business.Services.Concrete
         {
             if (registerRequest == null)
             {
-                throw new TracketBadRequestException(_localizer[Constants.LocalizeKeys.ProvideRequiredInformation]);
+                throw new TracketBadRequestException(_localizer[Constants.LocalizedValueKeys.Messages.PleaseProvideRequiredInformationMessage]);
             }
 
-            IdentityRole findRole = await _roleManager.FindByNameAsync(registerRequest.RoleName);
+            //IdentityRole findRole = await _roleManager.FindByNameAsync(registerRequest.RoleName);
 
-            if (findRole == null)
+            //if (findRole == null)
+            //{
+            //    throw new TracketNotFoundException(_localizer[Constants.LocalizeKeys.RoleNotFound]);
+            //}
+
+            using (var transaction = _unitOfWork.DBContext.Database.BeginTransaction())
             {
-                throw new TracketNotFoundException(_localizer[Constants.LocalizeKeys.RoleNotFound]);
+                TracketUser identityUser = new TracketUser
+                {
+                    Email = registerRequest.Email,
+                    UserName = "admin"
+                };
+
+
+
             }
 
             return null;

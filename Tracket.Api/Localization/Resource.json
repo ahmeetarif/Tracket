@@ -1,6 +1,6 @@
 ﻿[
   {
-    "Key": "ProvideRequiredInformation",
+    "Key": "PleaseProvideRequiredInformationMessage",
     "LocalizedValue": {
       "en-US": "Please provide required information!",
       "tr-TR": "Lütfen gerekli bilgileri doldurunuz!"
@@ -8,34 +8,148 @@
   },
 
   {
-    "Key": "EmptyEmail",
+    "Key": "UserNotFoundMessage",
     "LocalizedValue": {
-      "en-US": "Please enter your Email Address!",
-      "tr-TR": "Lütfen E-Posta addressinizi giriniz!"
+      "en-US": "User not found!",
+      "tr-TR": "Kullanıcı bulunamadı!"
     }
   },
 
   {
-    "Key": "EmptyPassword",
+    "Key": "UserNotFoundWithProvidedEmailAddress",
     "LocalizedValue": {
-      "en-US": "Please enter your Password!",
-      "tr-TR": "Lütfen Şifrenizi giriniz!!"
+      "en-US": "User not found with provided email address!",
+      "tr-TR": "Sağlanan e-posta adresiyle kullanıcı bulunamadı"
     }
   },
 
   {
-    "Key": "EmptyFullName",
+    "Key": "InvalidPasswordMessage",
     "LocalizedValue": {
-      "en-US": "Please enter your Fullname!",
+      "en-US": "Invalid password!",
+      "tr-TR": "Geçersiz Şifre!"
+    }
+  },
+
+  {
+    "Key": "InternalServerExceptionMessage",
+    "LocalizedValue": {
+      "en-US": "Internal server error! Please try again later...",
+      "tr-TR": "İç sonucu hatası! Lütfen daha sonra tekrar deneyin..."
+    }
+  },
+
+  {
+    "Key": "RoleNotFoundMessage",
+    "LocalizedValue": {
+      "en-US": "Role not found!",
+      "tr-TR": "Rol bulunamadi!"
+    }
+  },
+
+  {
+    "Key": "RoleAlreadyExistMessage",
+    "LocalizedValue": {
+      "en-US": "Provided role already exist!",
+      "tr-TR": "Sağlanan rol zaten bolunuyor!"
+    }
+  },
+
+  {
+    "Key": "BadRequestExceptionMessage",
+    "LocalizedValue": {
+      "en-US": "Bad request!",
+      "tr-TR": "Geçersiz istek!"
+    }
+  },
+
+
+
+  {
+    "Key": "EmptyEmailValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Please enter your email address!",
+      "tr-TR": "Lütfen e-posta adresinizi giriniz!"
+    }
+  },
+
+  {
+    "Key": "NotValidEmailValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Please enter valid email address!",
+      "tr-TR": "Lütfen geçerli bir e-posta adresinizi giriniz!"
+    }
+  },
+
+  {
+    "Key": "EmptyUsernameValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Please enter your username!",
+      "tr-TR": "Lütfen kullanıcı adınızı giriniz!"
+    }
+  },
+
+  {
+    "Key": "NotValidUsernameValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Please enter valid username!",
+      "tr-TR": "Lütfen geçerli bir kullanıcı adı giriniz!"
+    }
+  },
+
+  {
+    "Key": "EmptyPasswordValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Please enter your password!",
+      "tr-TR": "Lütfen şifrenizi giriniz!"
+    }
+  },
+
+  {
+    "Key": "PasswordMinimumLengthValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Your password should follow minimum length requirments!",
+      "tr-TR": "Şifreniz minimum uzunluk gereksinimlerini karşılamalıdır!"
+    }
+  },
+
+  {
+    "Key": "PasswordShouldContainUppercasedWordValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Your password should contain at least one uppercased word!",
+      "tr-TR": "Şifreniz en az bir büyük harf içermelidir!"
+    }
+  },
+
+  {
+    "Key": "PasswordShouldContainLowercasedWordValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Your password should contain at least one lowercased word!",
+      "tr-TR": "Şifreniz en az bir küçük harf içermelidir!"
+    }
+  },
+
+  {
+    "Key": "PasswordShouldContainNumberValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Your password should contain at least one number!",
+      "tr-TR": "Şifreniz en az bir rakam içermelidir!"
+    }
+  },
+
+  {
+    "Key": "EmptyFullnameValidationMessage",
+    "LocalizedValue": {
+      "en-US": "Please enter your fullname!",
       "tr-TR": "Lütfen tam adınızı giriniz!"
     }
   },
 
   {
-    "Key": "EmptyUsername",
+    "Key": "NotValidFullnameValidationMessage",
     "LocalizedValue": {
-      "en-US": "Please enter your Username!",
-      "tr-TR": "Lütfen Kullanıcı adınızı giriniz!"
+      "en-US": "Please enter valid fullname!",
+      "tr-TR": "Lütfen geçerli bir tam adı giriniz!"
     }
   }
 ]

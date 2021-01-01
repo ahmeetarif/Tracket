@@ -8,11 +8,11 @@ using Tracket.Common.Exceptions;
 
 namespace Tracket.Business.Filters
 {
-    public class ExceptionFilter : ExceptionFilterAttribute
+    public class ExceptionFilter2 : IExceptionFilter
     {
-        private readonly IDictionary<Type, Action<ExceptionContext>> _exceptionHandlers;
         private readonly IStringLocalizer<ExceptionFilter> _localizer;
-        public ExceptionFilter(IStringLocalizer<ExceptionFilter> localizer)
+        private readonly IDictionary<Type, Action<ExceptionContext>> _exceptionHandlers;
+        public ExceptionFilter2(IStringLocalizer<ExceptionFilter> localizer)
         {
             _localizer = localizer;
 
@@ -22,13 +22,12 @@ namespace Tracket.Business.Filters
                 { typeof(TracketInternalServerException), HandleInternalServerException },
                 { typeof(TracketNotFoundException), HandleNotFoundException }
             };
-
         }
-
-        public override void OnException(ExceptionContext context)
+        public void OnException(ExceptionContext context)
         {
+            context.HttpContext.Items.Add("exception", context.Exception);
+            context.HttpContext.Items.Add("exceptionMessage", context.Exception.Message.ToString());
             HandleExceptions(context);
-            base.OnException(context);
         }
 
         #region Private Functions
@@ -130,8 +129,6 @@ namespace Tracket.Business.Filters
 
             context.ExceptionHandled = true;
         }
-
-
 
         #endregion
     }
