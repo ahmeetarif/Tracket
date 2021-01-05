@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="5.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
@@ -18,6 +20,7 @@
     <ProjectReference Include="..\Tracket.Contracts\Tracket.Contracts.csproj" />
     <ProjectReference Include="..\Tracket.Core\Tracket.Core.csproj" />
     <ProjectReference Include="..\Tracket.Data\Tracket.Data.csproj" />
+    <ProjectReference Include="..\Tracket.Dto\Tracket.Dto.csproj" />
     <ProjectReference Include="..\Tracket.Infrastructure.Identity\Tracket.Infrastructure.Identity.csproj" />
     <ProjectReference Include="..\Tracket.Infrastructure.Localization\Tracket.Infrastructure.Localization.csproj" />
   </ItemGroup>

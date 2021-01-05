@@ -8,6 +8,14 @@
   },
 
   {
+    "Key": "NotFoundExceptionMessage",
+    "LocalizedValue": {
+      "en-US": "Not found!",
+      "tr-TR": "Bulunamadı!"
+    }
+  },
+
+  {
     "Key": "UserNotFoundMessage",
     "LocalizedValue": {
       "en-US": "User not found!",
@@ -48,10 +56,26 @@
   },
 
   {
+    "Key": "RoleDeletedMessage",
+    "LocalizedValue": {
+      "en-US": "Role has been deleted!",
+      "tr-TR": "Rol silindi!"
+    }
+  },
+
+  {
     "Key": "RoleAlreadyExistMessage",
     "LocalizedValue": {
       "en-US": "Provided role already exist!",
       "tr-TR": "Sağlanan rol zaten bolunuyor!"
+    }
+  },
+
+  {
+    "Key": "RoleAddedSuccessfullyMessage",
+    "LocalizedValue": {
+      "en-US": "Role added successfully!",
+      "tr-TR": "Rol başarıyla eklendi!"
     }
   },
 

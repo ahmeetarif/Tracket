@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Localization;
 using System;
 using System.Collections.Generic;
+using Tracket.Common;
 using Tracket.Common.Exceptions;
 
 namespace Tracket.Business.Filters
@@ -67,8 +68,9 @@ namespace Tracket.Business.Filters
             var details = new ProblemDetails
             {
                 Status = StatusCodes.Status500InternalServerError,
-                Title = _localizer["InternalServerExceptionTitle"],
-                Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1"
+                Title = _localizer[Constants.LocalizedValueKeys.Messages.InternalServerExceptionMessage],
+                Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+                Detail = context.Exception.Message
             };
 
             context.Result = new ObjectResult(details)
@@ -86,7 +88,7 @@ namespace Tracket.Business.Filters
             var details = new ProblemDetails()
             {
                 Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-                Title = _localizer["BadRequestExceptionTitle"],
+                Title = _localizer[Constants.LocalizedValueKeys.Messages.BadRequestExceptionMessage],
                 Detail = exception.Message
             };
 
@@ -102,7 +104,7 @@ namespace Tracket.Business.Filters
             var details = new ProblemDetails()
             {
                 Type = "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-                Title = _localizer["NotFoundExceptionTitle"],
+                Title = _localizer[Constants.LocalizedValueKeys.Messages.NotFoundExceptionMessage],
                 Detail = exception.Message
             };
 
@@ -118,7 +120,7 @@ namespace Tracket.Business.Filters
             var details = new ProblemDetails()
             {
                 Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1",
-                Title = _localizer["InternalServerExceptionTitle"],
+                Title = _localizer[Constants.LocalizedValueKeys.Messages.InternalServerExceptionMessage],
                 Detail = exception.Message
             };
 

@@ -9,11 +9,20 @@
 
         public static class Authentication
         {
-            public const string AuthenticationBase = Base + "/auth";
+            private const string AuthenticationBase = Base + "/auth";
 
             public const string Register = AuthenticationBase + "/register";
             public const string Login = AuthenticationBase + "/login";
         }
 
+        public static class Roles
+        {
+            private const string RolesBase = Base + "/roles";
+
+            public const string CreateRole = RolesBase + "/create";
+            public const string GetRoles = RolesBase + "/get";
+            public const string GetRole = RolesBase + "/{roleName}";
+            public const string Delete = RolesBase + "/delete/{roleName}";
+        }
     }
 }

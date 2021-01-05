@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Contracts", "Tracke
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Infrastructure.Localization", "Tracket.Infrastructure.Localization\Tracket.Infrastructure.Localization.csproj", "{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Common", "Tracket.Common\Tracket.Common.csproj", "{78C05D3E-C70D-4C44-B8E3-0AE317245471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracket.Common", "Tracket.Common\Tracket.Common.csproj", "{78C05D3E-C70D-4C44-B8E3-0AE317245471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracket.Dto", "Tracket.Dto\Tracket.Dto.csproj", "{0878C20B-E7B9-4D1E-84A3-9FDFE67E0C65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C05D3E-C70D-4C44-B8E3-0AE317245471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0878C20B-E7B9-4D1E-84A3-9FDFE67E0C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0878C20B-E7B9-4D1E-84A3-9FDFE67E0C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0878C20B-E7B9-4D1E-84A3-9FDFE67E0C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0878C20B-E7B9-4D1E-84A3-9FDFE67E0C65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{2EB46B58-F012-4048-A648-561E644E6A3B} = {3D99D2FD-9F2B-4206-AF0E-0D5B128F29FA}
 		{184C2649-2AD1-4D94-8D1F-9EDF5B9C9185} = {C7ED1908-5A1E-41A6-9EAB-CD69704194DC}
 		{78C05D3E-C70D-4C44-B8E3-0AE317245471} = {3D99D2FD-9F2B-4206-AF0E-0D5B128F29FA}
+		{0878C20B-E7B9-4D1E-84A3-9FDFE67E0C65} = {3D99D2FD-9F2B-4206-AF0E-0D5B128F29FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5AF7D5C-29BE-4455-9B0F-281F80430C95}

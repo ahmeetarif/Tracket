@@ -13,6 +13,9 @@
                 public const string RoleNotFoundMessage = "RoleNotFoundMessage";
                 public const string RoleAlreadyExistMessage = "RoleAlreadyExistMessage";
                 public const string BadRequestExceptionMessage = "BadRequestExceptionMessage";
+                public const string RoleAddedSuccessfullyMessage = "RoleAddedSuccessfullyMessage";
+                public const string NotFoundExceptionMessage = "NotFoundExceptionMessage";
+                public const string RoleDeletedMessage = "RoleDeletedMessage";
             }
 
             public static class Password

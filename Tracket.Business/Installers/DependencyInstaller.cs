@@ -15,6 +15,7 @@ namespace Tracket.Business.Installers
             #region Scopes
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IRoleService, RoleService>();
 
             services.AddScoped<IUnitOfWork<TracketDbContext>, UnitOfWork<TracketDbContext>>();
 
